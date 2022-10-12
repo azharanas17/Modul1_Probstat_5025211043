@@ -25,13 +25,13 @@ hist(rgeom(n,p),
      main="Histrogram Distribusi Geometrik")
 
 #e. Nilai Rataan (μ) dan Varian (σ²) dari Distribusi Geometrik
+p = 0.20
 paste("Rataan", 1/p)
 paste("Varian", (1-p)/p^2)
 
 #------------------------------------------------
 #nomer 2
-#Terdapat 20 pasien menderita Covid19 dengan peluang sembuh sebesar 0.2
-#Tentukan:
+#Terdapat 20 pasien menderita Covid19 dengan peluang sembuh sebesar 0.2. Tentukan:
 
 #a. Peluang terdapat 4 pasien yang sembuh
 n = 20 
@@ -40,6 +40,8 @@ x = 4
 dbinom(x, n, p)
 
 #b. Gambarkan grafik histogram berdasarkan kasus tersebut.
+n = 20
+p = 0.2
 plot(0:20, dbinom(0:20,n,p), 
      type = 'h',
      xlab = 'X',
@@ -52,18 +54,14 @@ paste("Varian", n*p*(1-p))
 
 #------------------------------------------------
 #nomer 3
-#Diketahui data dari sebuah tempat bersalin di rumah sakit tertentu menunjukkan rata-rata
-#historis 4,5 bayi lahir di rumah sakit ini setiap hari
+#Diketahui data dari sebuah tempat bersalin di rumah sakit tertentu menunjukkan rata-rata historis 4,5 bayi lahir di rumah sakit ini setiap hari
 
 #a. Berapa peluang bahwa 6 bayi akan lahir di rumah sakit ini besok?
 x = 6
 lambda = 4.5
 dpois(x, lambda)
-dpois(x, lambda)*365
-rpois(365, lambda)==6
 
-#b. Simulasikan dan buatlah hihstogram kelahiran 6 bayi akan lahir di rumah sakit ini
-#selama setahun (n = 365)
+#b. Simulasikan dan buatlah hihstogram kelahiran 6 bayi akan lahir di rumah sakit ini selama setahun (n = 365)
 n = 365
 set.seed(10)
 hist(rpois(n, lambda),
@@ -100,7 +98,7 @@ paste("Varian", 2*v)
 #Diketahui bilangan acak berdistribusi eksponensial (lambda = 3). Tentukan
 
 #a. Fungsi probabilitas dari Distribusi Eksponensial
-#untuk 100 bilangan
+#fungsi untuk 100 bilangan
 n = 100
 lambda = 3
 dexp(n, lambda)
@@ -134,8 +132,7 @@ paste("Varian", sd(rexp(n,lambda))^2)
 #nomer 6
 #Diketahui generate random nilai sebanyak 100 data, mean = 50, sd = 8. Tentukan
 
-#a. Fungsi probabilitas dan Distribusi normal P(X1 <= x <= X2), hitung Z-Scorenya
-#dan plot generate randomnya dalam bentuk grafik.
+#a. Fungsi probabilitas dan Distribusi normal P(X1 <= x <= X2), hitung Z-Scorenya dan plot generate randomnya dalam bentuk grafik.
 n = 100
 mean = 50
 sd = 8
