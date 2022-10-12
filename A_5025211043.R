@@ -2,15 +2,12 @@
 #Seorang penyurvei secara acak memilih orang-orang di jalan sampai dia bertemu dengan 
 #seseorang yang menghadiri acara vaksinasi sebelumnya.
 
-#a. Berapa peluang penyurvei bertemu x = 3 orang yang tidak menghadiri acara
-#vaksinasi sebelum keberhasilan pertama ketika p = 0,20 dari populasi menghadiri
-#acara vaksinasi ?
+#a. Berapa peluang penyurvei bertemu x = 3 orang yang tidak menghadiri acara vaksinasi sebelum keberhasilan pertama ketika p = 0,20 dari populasi menghadiri acara vaksinasi ?
 x = 3
 p = 0.20
 print(dgeom(x, p))
 
-#b. mean Distribusi Geometrik dengan 10000 data random, prob = 0,20 dimana
-#distribusi geometrik acak tersebut X = 3
+#b. mean Distribusi Geometrik dengan 10000 data random, prob = 0,20 dimana distribusi geometrik acak tersebut X = 3
 n = 10000
 p = 0.20
 x = 3
@@ -21,6 +18,8 @@ mean(rgeom(n, p)==3)
 paste("Pada poin a distribusi geometrik akan menghasilkan nilai tetap. Sedangkan pada poin b distribusi acak akan menghasilkan nilai yang berubah-ubah namun untuk x = 3, nilai yang didapat masih mendekati nilai pada poin a.")
 
 #d. Histogram Distribusi Geometrik, Peluang x = 3 gagal sebelum sukses pertama
+n = 10000
+p = 0.20
 set.seed(10)
 hist(rgeom(n,p),
      main="Histrogram Distribusi Geometrik")
