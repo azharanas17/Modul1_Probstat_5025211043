@@ -17,7 +17,8 @@ x = 3
 set.seed(10)
 mean(rgeom(n, p)==3)
 
-#c.
+#c. Bandingkan hasil poin a dan b, apa kesimpulan yang bisa didapatkan?
+paste("Pada poin a distribusi geometrik akan menghasilkan nilai tetap. Sedangkan pada poin b distribusi acak akan menghasilkan nilai yang berubah-ubah namun untuk x = 3, nilai yang didapat masih mendekati nilai pada poin a.")
 
 #d. Histogram Distribusi Geometrik, Peluang x = 3 gagal sebelum sukses pertama
 set.seed(10)
@@ -59,6 +60,8 @@ paste("Varian", n*p*(1-p))
 x = 6
 lambda = 4.5
 dpois(x, lambda)
+dpois(x, lambda)*365
+rpois(365, lambda)==6
 
 #b. Simulasikan dan buatlah hihstogram kelahiran 6 bayi akan lahir di rumah sakit ini
 #selama setahun (n = 365)
@@ -68,7 +71,7 @@ hist(rpois(n, lambda),
      main = "Histogram Distribusi Poisson")
 
 #c. Bandingkan hasil poin a dan b, Apa kesimpulan yang bisa didapatkan?
-
+paste("Nilai yang didapatkan pada poin a mendekati nilai dari rata-rata distribusi acak pada poin b dengan x = 6 (dpois(6,3) mendekati mean(rpois(365,3)==6))")
 
 #d. Nilai Rataan (μ) dan Varian (σ²) dari Distribusi Poisson
 paste("Rataan", lambda)
