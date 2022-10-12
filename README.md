@@ -44,9 +44,11 @@ Rataan = 1/p
 Varian = (1-p)/p^2
 ```
 Sehingga didapatkan hasil:
+
 ![1_e.png](https://github.com/azharanas17/documentation/blob/main/Probstat_1_e)
 
 
+<br><br>
 ### 2. Distribusi Binomial
 #### Terdapat 20 pasien menderita Covid19 dengan peluang sembuh sebesar 0.2. Tentukan:
 
@@ -63,7 +65,7 @@ Seperti soal pertama, untuk menghitung distribusi binomial dapat langsung menggu
 
 b. Gambarkan grafik histogram berdasarkan kasus tersebut.
 
-![2_b.png]https://github.com/azharanas17/documentation/blob/main/Probstat_2_b)
+![2_b.png](https://github.com/azharanas17/documentation/blob/main/Probstat_2_b)
 
 Menggunakan fungsi plot() dan dbinom() dengan parameter nilai orang yang sembuh yaitu 0 sampai 20, jumlah orang 20 dan peluang sembuh yaitu 0.2
 
@@ -73,6 +75,7 @@ Didapatkan nilai rataan dan varian untuk distribusi binomial, sebagai berikut:
 ![2_c.png](https://github.com/azharanas17/documentation/blob/main/Probstat_2_c)
 
 
+<br><br>
 ### 3. Distribusi Poisson
 #### Diketahui data dari sebuah tempat bersalin di rumah sakit tertentu menunjukkan rata-rata historis 4,5 bayi lahir di rumah sakit ini setiap hari
 
@@ -103,6 +106,7 @@ Didapatkan nilai hasil rataan dan varian dari Distribusi Poisson, sebagai beriku
 ![3_d.png](https://github.com/azharanas17/documentation/blob/main/Probstat_3_d)
 
 
+<br><br>
 ### 4. Distribusi Chi-Square
 #### Diketahui nilai x = 2 dan v = 10. Tentukan:
 
@@ -127,6 +131,8 @@ Didapatkan nilai hasil rataan dan varian dari Distribusi Chi-Square, sebagai ber
 
 ![4_c.png](https://github.com/azharanas17/documentation/blob/main/Probstat_4_c)
 
+
+<br><br>
 ### 5. Distribusi Eksponensial
 #### Diketahui bilangan acak berdistribusi eksponensial (lambda = 3). Tentukan
 
@@ -143,13 +149,25 @@ Sehingga didapatkan hasil sebagai berikut:
 
 b. Histogram dari Ditribusi Eksponensial untuk 10, 100, 1000 dan 10000 bilangan random
 
-![5_b.png](https://github.com/azharanas17/documentation/blob/main/Probstat_5_b)
+![5_b_n10.png](https://github.com/azharanas17/documentation/blob/main/Probstat_5_b_n10)
+
+
+![5_b_n100.png](https://github.com/azharanas17/documentation/blob/main/Probstat_5_b_n100)
+
+
+![5_b_n1000.png](https://github.com/azharanas17/documentation/blob/main/Probstat_5_b_n1000)
+
+
+![5_b_n10000.png](https://github.com/azharanas17/documentation/blob/main/Probstat_5_b_n10000)
+
 
 c. Nilai Rataan (μ) dan Varian (σ²) dari Distribusi Eksponensial
 Didapatkan nilai hasil dari rataan dan varian dari Distribusi Eksponensial, sebagai berikut:
 
 ![5_c.png](https://github.com/azharanas17/documentation/blob/main/Probstat_5_c)
 
+
+<br><br>
 ### 6. DIstribusi Normal
 #### Diketahui generate random nilai sebanyak 100 data, mean = 50, sd = 8. Tentukan
 
@@ -168,7 +186,7 @@ Sehingga didapatkan hasil sebagai berikut:
 
 b. Generate histogram dari Distribusi Normal dengan breaks 50
  
-![5_b.png](https://github.com/azharanas17/documentation/blob/main/Probstat_5_b)
+![5_b.png](https://github.com/azharanas17/documentation/blob/main/Probstat_6_b)
  
 c. Nilai varian (σ²) dari hasil generate random nilai Distribusi Normal
 Didapatkan nilai hasil varian dari Distribusi Normal adalah sebagai berikut:
